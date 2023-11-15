@@ -9,9 +9,7 @@ import IsometricGrid from "./components/IsometricGrid";
 export default function Home() {
   return (
     <div>
-      <div
-        className="relative bg-cover bg-left flex items-center bg-fffefa"
-        style={{ height: "95vh" }}>
+      <div className="relative bg-cover bg-left flex items-center bg-fffefa min-h-[600px] max-h-[900px]">
         <div className="absolute inset-0 z-0">
           <Image
             src={vectorImage}
@@ -134,14 +132,14 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box mx-5">
+              <div className="timeline-end timeline-box mx-auto">
                 Recognising Weakness and Strength
               </div>
               <hr />
             </li>
             <li>
               <hr />
-              <div className="timeline-start timeline-box mx-5">
+              <div className="timeline-start timeline-box mx-auto">
                 Personalised Study Plan
               </div>
               <div className="timeline-middle">
@@ -172,14 +170,16 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box mx-5">
+              <div className="timeline-end timeline-box mx-auto">
                 Weekly Tutoring Sessions
               </div>
               <hr />
             </li>
             <li>
               <hr />
-              <div className="timeline-start timeline-box mx-5">Success!!</div>
+              <div className="timeline-start timeline-box mx-auto">
+                Success!!
+              </div>
               <div className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
