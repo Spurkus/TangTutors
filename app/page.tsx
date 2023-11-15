@@ -5,6 +5,8 @@ import vectorImage from "public/vector1.png";
 import JonathanYun from "public/JonathanYun.png";
 import FilmBox from "./components/FilmBox";
 import IsometricGrid from "./components/IsometricGrid";
+import { faPerson } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
@@ -194,6 +196,28 @@ export default function Home() {
               </div>
             </li>
           </ul>
+          <div className="divider pt-16">START YOUR JOURNEY NOW</div>
+          <div>
+            <h1
+              className="pt-12 text-4xl font-bold text-gray-900"
+              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}>
+              Enquire here to{" "}
+              <span className="text-orange-600">learn more</span> and receive a{" "}
+              <span className="text-indigo-600">free tutoring session!</span>
+            </h1>
+            <div className="form-control w-full max-w-xs my-8">
+              <input
+                type="text"
+                placeholder="Parent's First Name"
+                className="input input-bordered input-white w-full max-w-xs pl-9 bg-blue-500 bg-opacity-25"
+              />
+              <FontAwesomeIcon
+                icon={faPerson}
+                className="absolute mt-2 ml-2 w-5"
+                color="#FFFEFA"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

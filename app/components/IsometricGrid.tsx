@@ -1,7 +1,6 @@
 import React from "react";
 import "katex/dist/katex.min.css";
 import { BlockMath } from "react-katex";
-import styled from "styled-components";
 
 const IsometricGrid = () => {
   const gridStyle = {
