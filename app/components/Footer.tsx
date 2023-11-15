@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>A personal tutoring website made just for you :)</p>
+        <p>A personal tutoring website made by Oscar Tang :)</p>
       </aside>
     </footer>
   );

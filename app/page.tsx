@@ -1,12 +1,12 @@
 import Image from "next/image";
-
-import Tutor from "public/tutor.png";
-import vectorImage from "public/vector1.png";
-import JonathanYun from "public/JonathanYun.png";
 import FilmBox from "./components/FilmBox";
 import IsometricGrid from "./components/IsometricGrid";
-import { faPerson } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ParentForm from "./components/ParentForm";
+
+import Tutor from "public/tutor.png";
+import JonathanYun from "public/JonathanYun.png";
+import vectorImage1 from "public/vector1.png";
+import vectorImage2 from "public/vector2.png";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="relative bg-cover bg-left flex items-center bg-fffefa min-h-[600px] max-h-[900px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src={vectorImage}
+            src={vectorImage1}
             className="absolute object-cover h-full w-full"
             alt="Vector Image"
           />
@@ -94,7 +94,14 @@ export default function Home() {
         <IsometricGrid />
         <FilmBox />
       </div>
-      <div className="bg-slate-300">
+      <div className="relative bg-cover bg-left flex items-center bg-fffefa">
+        <div className="absolute inset-0 z-0 right-0 w-full h-full">
+          <Image
+            src={vectorImage2}
+            className="absolute object-cover w-full h-full"
+            alt="Vector Image"
+          />
+        </div>
         <div className="z-10 p-4 max-w-6xl m-auto min-w-[300px] py-12">
           <h1 className="text-3xl font-bold">So why choose me?</h1>
           <p>
@@ -205,19 +212,8 @@ export default function Home() {
               <span className="text-orange-600">learn more</span> and receive a{" "}
               <span className="text-indigo-600">free tutoring session!</span>
             </h1>
-            <div className="form-control w-full max-w-xs my-8">
-              <input
-                type="text"
-                placeholder="Parent's First Name"
-                className="input input-bordered input-white w-full max-w-xs pl-9 bg-blue-500 bg-opacity-25"
-              />
-              <FontAwesomeIcon
-                icon={faPerson}
-                className="absolute mt-2 ml-2 w-5"
-                color="#FFFEFA"
-              />
-            </div>
           </div>
+          <ParentForm />
         </div>
       </div>
     </div>
