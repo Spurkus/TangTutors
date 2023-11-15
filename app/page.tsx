@@ -54,7 +54,12 @@ export default function Home() {
               <div className="chat chat-start">
                 <div className="chat-image avatar">
                   <div className="w-10 rounded-full">
-                    <Image alt="Profile Picture of a Tutor" src={JonathanYun} />
+                    <a href="https://www.linkedin.com/in/jonathan-yun-6824761b9/">
+                      <Image
+                        alt="Profile Picture of a Tutor"
+                        src={JonathanYun}
+                      />
+                    </a>
                   </div>
                 </div>
                 <div className="chat-bubble w-[400px]">
