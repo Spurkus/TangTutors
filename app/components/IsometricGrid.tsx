@@ -17,7 +17,7 @@ const IsometricGrid = () => {
       Mathematical Methods and Specialist <br />
       <BlockMath>
         {
-          "\\lim_{x\\rightarrow\\infty} \\sum^n_{i=1} f(x_i) \\Delta x = \\int^a_b f(x) \\, dx"
+          "\\lim_{n\\rightarrow\\infty} \\sum^n_{i=1} f(x_i) \\Delta x = \\int^a_b f(x) \\, dx"
         }
       </BlockMath>
     </div>

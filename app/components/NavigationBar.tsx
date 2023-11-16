@@ -1,10 +1,15 @@
 import React from "react";
+import Image from "next/image";
+import Logo from "public/logo2.png";
 
 const NavigationBar = () => {
   return (
     <div className="navbar bg-base-100 px-52 text-white">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">TangTutors</a>
+        <a className="btn btn-ghost text-xl">
+          <Image src={Logo} alt="logo" className="w-8 h-8" />
+          TangTutors
+        </a>
       </div>
       <div className="navbar-end flex-none">
         <ul className="menu menu-horizontal space-x-4 px-4 mx-1">
