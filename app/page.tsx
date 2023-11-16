@@ -1,7 +1,8 @@
 import Image from "next/image";
-import FilmBox from "./components/FilmBox";
-import IsometricGrid from "./components/IsometricGrid";
-import ParentForm from "./components/ParentForm";
+import Link from "next/link";
+import FilmBox from "./home/FilmBox";
+import IsometricGrid from "./home/IsometricGrid";
+import ParentForm from "./home/ParentForm";
 
 import Tutor from "public/tutor.png";
 import JonathanYun from "public/JonathanYun.png";
@@ -35,9 +36,11 @@ export default function Home() {
                   <span className="font-bold">Your future tutor,</span>{" "}
                   perchance
                 </p>
-                <button className="btn btn-outline btn-primary">
-                  Get Started
-                </button>
+                <a href="#form">
+                  <button className="btn btn-outline btn-primary">
+                    Get Started
+                  </button>
+                </a>
               </div>
             </div>
             <div className="divider">KNOWLEDGE IS POWER</div>
@@ -54,12 +57,12 @@ export default function Home() {
               <div className="chat chat-start">
                 <div className="chat-image avatar">
                   <div className="w-10 rounded-full">
-                    <a href="https://www.linkedin.com/in/jonathan-yun-6824761b9/">
+                    <Link href="https://www.linkedin.com/in/jonathan-yun-6824761b9/">
                       <Image
                         alt="Profile Picture of a Tutor"
                         src={JonathanYun}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="chat-bubble w-[400px]">
@@ -213,7 +216,9 @@ export default function Home() {
               <span className="text-indigo-600">free tutoring session!</span>
             </h1>
           </div>
-          <ParentForm />
+          <div id="form">
+            <ParentForm />
+          </div>
         </div>
       </div>
     </div>

@@ -5,23 +5,30 @@ import {
   faGithub,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">Home</a>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact Us</a>
+        <Link className="link link-hover" href="/">
+          Home
+        </Link>
+        <Link className="link link-hover" href="/about">
+          About us
+        </Link>
+        <Link className="link link-hover" href="mailto:oscartang.dev@gmail.com">
+          Contact Us
+        </Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
-          <a>
+          <Link href="https://www.linkedin.com/in/oscartangdev/">
             <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7" />
-          </a>
-          <a>
+          </Link>
+          <Link href="https://github.com/Spurkus">
             <FontAwesomeIcon icon={faGithub} className="h-7 w-7" />
-          </a>
+          </Link>
           <a>
             <FontAwesomeIcon icon={faMedium} className="h-7 w-7" />
           </a>
