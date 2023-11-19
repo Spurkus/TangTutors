@@ -1,3 +1,3 @@
-## [Tang Tutors](tang-tutors.vercel.app)
+## [Tang Tutors](www.tang-tutors.vercel.app)
 
 This is a website :D
