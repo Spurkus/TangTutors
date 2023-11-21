@@ -78,24 +78,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-base-100 text-white">
+      <div className="bg-[#1d232a] text-white">
         <div className="z-10 p-4 max-w-6xl m-auto min-w-[300px] pt-12">
           <h1 className="text-4xl font-bold text-center">
             QCAA Subjects I am Most Confident in Tutoring!
           </h1>
           <br />
         </div>
-      </div>
-      <div className="flex justify-center space-x-24 bg-base-100 text-white pb-12">
-        <div
-          className="mockup-code max-w-xs text-lg"
-          style={{ height: "6rem" }}>
-          <pre data-prefix="$" className="text-success">
-            <code>Digital Solutions</code>
-          </pre>
+        <div className="flex justify-center space-x-24 text-white pb-12">
+          <div
+            className="mockup-code max-w-xs text-lg"
+            style={{ height: "6rem" }}>
+            <pre data-prefix="$" className="text-success">
+              <code>Digital Solutions</code>
+            </pre>
+          </div>
+          <IsometricGrid />
+          <FilmBox />
         </div>
-        <IsometricGrid />
-        <FilmBox />
       </div>
       <div className="relative bg-cover bg-left flex items-center bg-fffefa">
         <div className="absolute inset-0 z-0 right-0 w-full h-full">
@@ -113,18 +113,20 @@ export default function Home() {
           </p>
           <ul className="timeline text-white justify-center pt-10">
             <li>
-              <div className="timeline-start timeline-box mx-6">
+              <div className="timeline-start timeline-box mx-6 bg-[#1d232a]">
                 Signing up to Tang Tutors
               </div>
               <div className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  className="w-5 h-5">
+                  className="w-5 h-5"
+                  fill="#1d232a">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clipRule="evenodd"
+                    fill="#1d232a"
                   />
                 </svg>
               </div>
@@ -136,33 +138,37 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  className="w-5 h-5">
+                  className="w-5 h-5"
+                  fill="#1d232a">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clipRule="evenodd"
+                    fill="#1d232a"
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box mx-auto">
+              <div className="timeline-end timeline-box mx-auto bg-[#1d232a]">
                 Recognising Weakness and Strength
               </div>
               <hr />
             </li>
             <li>
               <hr />
-              <div className="timeline-start timeline-box mx-auto">
+              <div className="timeline-start timeline-box mx-auto bg-[#1d232a]">
                 Personalised Study Plan
               </div>
               <div className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  className="w-5 h-5">
+                  className="w-5 h-5"
+                  fill="#1d232a">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clipRule="evenodd"
+                    fill="#1d232a"
                   />
                 </svg>
               </div>
@@ -174,33 +180,37 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  className="w-5 h-5">
+                  className="w-5 h-5"
+                  fill="#1d232a">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clipRule="evenodd"
+                    fill="#1d232a"
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box mx-auto">
+              <div className="timeline-end timeline-box mx-auto bg-[#1d232a]">
                 Weekly Tutoring Sessions
               </div>
               <hr />
             </li>
             <li>
               <hr />
-              <div className="timeline-start timeline-box mx-auto">
+              <div className="timeline-start timeline-box mx-auto bg-[#1d232a]">
                 Success!!
               </div>
               <div className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  className="w-5 h-5">
+                  className="w-5 h-5"
+                  fill="#1d232a">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                     clipRule="evenodd"
+                    fill="#1d232a"
                   />
                 </svg>
               </div>

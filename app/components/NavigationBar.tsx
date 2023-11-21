@@ -5,7 +5,7 @@ import Logo from "public/logo2.png";
 
 const NavigationBar = () => {
   return (
-    <div className="navbar bg-base-100 px-52 text-white">
+    <div className="navbar bg-zinc-900 px-52 text-white">
       <div className="flex-1">
         <Link className="btn btn-ghost text-xl" href="/">
           <Image src={Logo} alt="logo" className="w-8 h-8" />
