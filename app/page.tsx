@@ -220,7 +220,7 @@ export default function Home() {
           <div>
             <h1
               className="pt-12 text-4xl font-bold text-gray-900"
-              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}>
+              style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}>
               Enquire here to{" "}
               <span className="text-orange-600">learn more</span> and receive a{" "}
               <span className="text-indigo-600">free tutoring session!</span>
