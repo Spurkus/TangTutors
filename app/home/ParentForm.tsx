@@ -278,7 +278,7 @@ const ParentForm = () => {
                   </span>
                 </div>
                 <textarea
-                  placeholder="Let us know about the educational needs of your child (Optional) :)"
+                  placeholder="Let us know about the educational needs of your child :)"
                   className="textarea textarea-bordered border-3 rounded-[1.5rem] border-white w-full h-28 bg-white resize-none"
                   id="information"
                   autoComplete="off"
