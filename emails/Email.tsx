@@ -38,10 +38,12 @@ export const Email = ({
         </Heading>
         <Text style={{ ...text, marginBottom: "14px" }}>
           I'll share my tutoring availability with you soon! To make things
-          easy, I will message you using your phone number of {phoneNumber}. To
-          verify, your postcode is <span className="font-bold">{postcode}</span>{" "}
-          and preferred tutoring type is{" "}
-          <span className="font-bold">{tutoringType}</span>. <br /> <br />
+          easy, I will message you using your phone number of{" "}
+          <span className="font-bold">{phoneNumber}</span>.<br /> For
+          verification, your postcode is{" "}
+          <span className="font-bold">{postcode}</span> and preferred tutoring
+          type is <span className="font-bold">{tutoringType}</span>. <br />{" "}
+          <br />
           Please reply if there is any incorrect information, other than that,
           thanks for joining! {":)"}
         </Text>
