@@ -16,6 +16,7 @@ import Image from "next/image";
 const NAME_REGEX = /^[A-Za-z]{1,30}$/;
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const PHONENUMBER_REGEX = /^\+?[1-9]\d{8}$/;
+const PHONENUMBER_REGEX_2 = /^0\d{9}$/;
 const POSTCODE_REGEX = /^\d{4}$/;
 const INFORMATION_REGEX = /^.{1,500}$/;
 
@@ -57,7 +58,10 @@ const ParentForm = () => {
   }, [email]);
 
   useEffect(() => {
-    setValidPhoneNumber(PHONENUMBER_REGEX.test(phoneNumber));
+    setValidPhoneNumber(
+      PHONENUMBER_REGEX.test(phoneNumber) ||
+        PHONENUMBER_REGEX_2.test(phoneNumber)
+    );
   }, [phoneNumber]);
 
   useEffect(() => {
@@ -73,11 +77,7 @@ const ParentForm = () => {
   }, [tutoringType]);
 
   useEffect(() => {
-    if (information == "") {
-      setValidInformation(true);
-    } else {
-      setValidInformation(INFORMATION_REGEX.test(information));
-    }
+    setValidInformation(INFORMATION_REGEX.test(information));
   }, [information]);
 
   const handleInformationChange = (
