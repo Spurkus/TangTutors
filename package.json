@@ -6,22 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-email/button": "0.0.11",
+    "@react-email/components": "0.0.11",
+    "@react-email/html": "0.0.6",
+    "@react-email/render": "0.0.9",
+    "@react-email/tailwind": "0.0.12",
     "@types/react-latex": "^2.0.3",
     "classnames": "^2.3.2",
     "katex": "^0.16.9",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "1.9.5",
     "react-katex": "^3.0.1",
     "react-latex": "^2.0.0",
     "react-latex-next": "^2.2.0",
+    "resend": "^2.0.0",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.1"
   },
@@ -37,6 +45,9 @@
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@react-email/render": "0.0.9"
   },
   "engines": {
     "node": ">=18.17.0"

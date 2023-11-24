@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, FormHTMLAttributes } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPerson,
@@ -64,15 +64,6 @@ const ParentForm = () => {
     setValidPostcode(POSTCODE_REGEX.test(postcode));
   }, [postcode]);
 
-  const validToSubmit =
-    validFirstName &&
-    validLastName &&
-    validEmail &&
-    validPhoneNumber &&
-    validPostcode &&
-    validInformation &&
-    validTutoringType;
-
   useEffect(() => {
     setValidTutoringType(
       ["In-person", "Online", "Mix of in-person and online"].includes(
@@ -103,21 +94,46 @@ const ParentForm = () => {
 
   const handleModalToggle = () => setOpenModel((prev) => !prev);
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-
-    if (validToSubmit) {
-      handleModalToggle();
-    }
-  };
-
   const refreshPage = () => {
     window.location.reload();
   };
 
+  const validToSubmit =
+    validFirstName &&
+    validLastName &&
+    validEmail &&
+    validPhoneNumber &&
+    validPostcode &&
+    validInformation &&
+    validTutoringType;
+
+  // Handling submission and email
+
+  const sendEmail = async () => {
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phoneNumber: phoneNumber,
+        postcode: postcode,
+        information: information,
+        tutoringType: tutoringType,
+      }),
+    });
+  };
+
+  const handleSubmit = (e: any) => {
+    if (validToSubmit) {
+      sendEmail();
+      handleModalToggle();
+    }
+  };
+
   return (
     <div>
-      <form>
+      <form action={handleSubmit}>
         <div className="my-8">
           <div className="flex space-x-8">
             <div className="flex w-full form-control space-y-3">
@@ -274,7 +290,7 @@ const ParentForm = () => {
               <div className="flex relative justify-end">
                 <button
                   className="btn btn-info rounded-full ml-auto"
-                  onClick={(e) => handleSubmit(e)}
+                  type="submit"
                   disabled={!validToSubmit}
                   style={{
                     color: validToSubmit ? "black" : "white",
