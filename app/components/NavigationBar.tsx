@@ -13,7 +13,7 @@ const NavigationBar = () => {
         </Link>
       </div>
       <div className="navbar-end flex-none">
-        <ul className="menu menu-horizontal space-x-4 px-4 mx-1 hidden min-[945px]:flex">
+        <ul className="menu menu-horizontal space-x-4 px-4 mx-1 hidden min-[950px]:flex">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -29,8 +29,7 @@ const NavigationBar = () => {
           </li>
         </ul>
 
-        {/* Burger menu for smaller screens */}
-        <div className="dropdown dropdown-end min-[945px]:hidden">
+        <div className="dropdown dropdown-end min-[950px]:hidden">
           <label tabIndex={0} className="m-1 btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +45,7 @@ const NavigationBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+            className="menu dropdown-content bg-base-200 w-56 rounded-box z-10">
             <li>
               <Link href="/">Home</Link>
             </li>

@@ -12,7 +12,7 @@ import vectorImage2 from "public/vector2.png";
 export default function Home() {
   return (
     <div>
-      <div className="relative bg-cover bg-left flex items-center bg-fffefa min-h-[600px] max-h-[900px]">
+      <div className="relative bg-cover bg-left flex items-center bg-fffefa min-h-[600px] 2xl:h-[900px]">
         <div className="absolute inset-0 z-0">
           <Image
             src={vectorImage1}
@@ -22,8 +22,17 @@ export default function Home() {
         </div>
         <div className="z-10 p-4 max-w-6xl m-auto min-w-[300px]">
           <div className="pt-10 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image src={Tutor} alt="tutor image" width="500" />
+            <div className="hero-content flex-col min-[850px]:flex-row-reverse">
+              <div className="relative min-w-[300px] max-w-[500px] max-[850px]:w-[50%]">
+                <Image
+                  src={Tutor}
+                  alt="tutor image"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
               <div>
                 <h1 className="text-5xl font-bold">Welcome to Tang Tutors!!</h1>
                 <p className="py-6">
@@ -85,16 +94,20 @@ export default function Home() {
           </h1>
           <br />
         </div>
-        <div className="flex justify-center space-x-24 text-white pb-12">
+        <div className="lg:flex justify-center space-x-6 min-[1200px]:space-x-24 max-lg:space-y-6 text-white pb-12">
           <div
-            className="mockup-code max-w-xs text-lg"
+            className="mockup-code max-w-xs text-lg w-xs max-lg:mx-auto"
             style={{ height: "6rem" }}>
             <pre data-prefix="$" className="text-success">
               <code>Digital Solutions</code>
             </pre>
           </div>
-          <IsometricGrid />
-          <FilmBox />
+          <div className="flex justify-center">
+            <IsometricGrid />
+          </div>
+          <div className="flex justify-center">
+            <FilmBox />
+          </div>
         </div>
       </div>
       <div className="relative bg-cover bg-left flex items-center bg-fffefa">
@@ -111,7 +124,7 @@ export default function Home() {
             Well... here&apos; a timeline of what it might look like if you
             start tuition today!
           </p>
-          <ul className="timeline text-white justify-center pt-10">
+          <ul className="timeline max-xl:hidden text-white justify-center pt-10">
             <li>
               <div className="timeline-start timeline-box mx-6 bg-[#1d232a]">
                 Signing up to Tang Tutors
@@ -198,6 +211,111 @@ export default function Home() {
             <li>
               <hr />
               <div className="timeline-start timeline-box mx-auto bg-[#1d232a]">
+                Success!!
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="#1d232a">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                    fill="#1d232a"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <ul className="timeline timeline-vertical xl:hidden text-white justify-center pt-10">
+            <li>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="#1d232a">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                    fill="#1d232a"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-start timeline-box bg-[#1d232a]">
+                Signing up to Tang Tutors
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="#1d232a">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                    fill="#1d232a"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box bg-[#1d232a]">
+                Recognising Weakness and Strength
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-start timeline-box bg-[#1d232a]">
+                Personalised Study Plan
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="#1d232a">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                    fill="#1d232a"
+                  />
+                </svg>
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="#1d232a">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                    fill="#1d232a"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box bg-[#1d232a]">
+                Weekly Tutoring Sessions
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-start timeline-box bg-[#1d232a]">
                 Success!!
               </div>
               <div className="timeline-middle">

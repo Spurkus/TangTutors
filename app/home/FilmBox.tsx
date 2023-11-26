@@ -10,7 +10,7 @@ const StyledText = styled.p`
 const FilmBox = () => {
   return (
     <div
-      className="max-w-xl grid h-20 card bg-[#15191e] rounded-box place-items-center text-lg py-4 px-4"
+      className="max-w-sm grid h-20 card bg-[#15191e] rounded-box place-items-center text-lg py-4 px-4"
       style={{ height: "6rem" }}>
       <StyledText>Film, Television & New Media</StyledText>
       <div className="rating rating-sm">

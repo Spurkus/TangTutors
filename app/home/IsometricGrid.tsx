@@ -12,7 +12,7 @@ const IsometricGrid = () => {
 
   return (
     <div
-      className="max-w-4xl grid bg-white text-black rounded-box place-items-center text-center text-lg font-bold py-4 px-4"
+      className="max-w-sm grid bg-white text-black rounded-box place-items-center text-center text-lg font-bold py-4 px-4"
       style={gridStyle}>
       Mathematical Methods and Specialist <br />
       <BlockMath>
