@@ -29,7 +29,7 @@ const NavigationBar = () => {
           </li>
         </ul>
 
-        <div className="dropdown dropdown-end min-[950px]:hidden">
+        <div className="dropdown dropdown-end z-30 min-[950px]:hidden">
           <label tabIndex={0} className="m-1 btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
