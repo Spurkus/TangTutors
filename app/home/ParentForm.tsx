@@ -135,10 +135,10 @@ const ParentForm = () => {
     <div>
       <form action={handleSubmit}>
         <div className="my-8">
-          <div className="flex space-x-8">
-            <div className="flex w-full form-control space-y-3">
+          <div className="md:flex md:space-x-8 max-md:space-y-8">
+            <div className="lg:flex w-full form-control space-y-3">
               <div className="flex w-full space-x-3">
-                <div className="relative">
+                <div className="w-1/2 relative">
                   <FontAwesomeIcon
                     icon={faPerson}
                     className="absolute mt-3 ml-3 w-6 h-6 text-gray-400"
@@ -156,7 +156,7 @@ const ParentForm = () => {
                     required
                   />
                 </div>
-                <div className="relative">
+                <div className="w-1/2 relative">
                   <FontAwesomeIcon
                     icon={faPerson}
                     className="absolute mt-3 ml-3 w-6 h-6 text-gray-400"
@@ -265,27 +265,29 @@ const ParentForm = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full h-full block space-y-3">
-              <div>
-                <div className="flex relative justify-end">
-                  <span
-                    className={`absolute text-xs mt-1 right-3.5 ${
-                      information.length > 450
-                        ? "text-red-400"
-                        : "text-gray-400"
-                    }`}>
-                    {500 - information.length}
-                  </span>
+            <div className="w-full h-full space-y-3">
+              <div className="max-md:block max-md:justify-center">
+                <div>
+                  <div className="block relative justify-end">
+                    <span
+                      className={`absolute text-xs mt-1 right-3.5 ${
+                        information.length > 450
+                          ? "text-red-400"
+                          : "text-gray-400"
+                      }`}>
+                      {500 - information.length}
+                    </span>
+                  </div>
+                  <textarea
+                    placeholder="Let us know about the educational needs of your child :)"
+                    className="textarea textarea-bordered border-3 rounded-[1.5rem] w-full h-28 bg-white resize-none"
+                    id="information"
+                    autoComplete="off"
+                    onChange={(e) => handleInformationChange(e)}
+                    value={information}
+                    required
+                  />
                 </div>
-                <textarea
-                  placeholder="Let us know about the educational needs of your child :)"
-                  className="textarea textarea-bordered border-3 rounded-[1.5rem] border-white w-full h-28 bg-white resize-none"
-                  id="information"
-                  autoComplete="off"
-                  onChange={(e) => handleInformationChange(e)}
-                  value={information}
-                  required
-                />
               </div>
               <div className="flex relative justify-end">
                 <button
