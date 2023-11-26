@@ -5,7 +5,7 @@ import Logo from "public/logo2.png";
 
 const NavigationBar = () => {
   return (
-    <div className="navbar bg-zinc-900 px-0 2xl:px-52 text-white">
+    <div className="navbar bg-zinc-900 px-6 min-[1360px]:px-52 text-white">
       <div className="flex-1">
         <Link className="btn btn-ghost text-xl" href="/">
           <Image src={Logo} alt="logo" className="w-8 h-8" />
@@ -13,7 +13,7 @@ const NavigationBar = () => {
         </Link>
       </div>
       <div className="navbar-end flex-none">
-        <ul className="menu menu-horizontal space-x-4 px-4 mx-1 hidden lg:flex">
+        <ul className="menu menu-horizontal space-x-4 px-4 mx-1 hidden min-[945px]:flex">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -30,7 +30,7 @@ const NavigationBar = () => {
         </ul>
 
         {/* Burger menu for smaller screens */}
-        <div className="dropdown dropdown-end lg:hidden">
+        <div className="dropdown dropdown-end min-[945px]:hidden">
           <label tabIndex={0} className="m-1 btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
