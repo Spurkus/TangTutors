@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <div className="divider">KNOWLEDGE IS POWER</div>
             <div className="hero-content flex-col lg:flex-row-reverse">
-              <div className="text-center lg:text-left pl-12">
+              <div className="text-center lg:text-left">
                 <h1 className="text-4xl font-bold">QCE and QCAA Curriculum</h1>
                 <p className="py-6">
                   This is a high school tutoring website for those who are in
@@ -65,9 +65,10 @@ export default function Home() {
               </div>
               <div className="chat chat-start">
                 <div className="chat-image avatar">
-                  <div className="w-10 rounded-full">
+                  <div className="w-10 rounded-full max-sm:hidden">
                     <Link href="https://www.linkedin.com/in/jonathan-yun-6824761b9/">
                       <Image
+                        className="max-sm:hidden"
                         alt="Profile Picture of a Tutor"
                         src={JonathanYun}
                       />
@@ -94,7 +95,7 @@ export default function Home() {
           </h1>
           <br />
         </div>
-        <div className="lg:flex justify-center space-x-6 min-[1200px]:space-x-24 max-lg:space-y-6 text-white pb-12">
+        <div className="lg:flex justify-center min-lg:space-x-6 min-[1200px]:space-x-24 max-lg:space-y-6 text-white pb-12">
           <div
             className="mockup-code max-w-xs text-lg w-xs max-lg:mx-auto"
             style={{ height: "6rem" }}>
