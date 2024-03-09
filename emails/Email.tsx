@@ -43,11 +43,11 @@ export const Email = ({
           verification, your postcode is{" "}
           <span className="font-bold">{postcode}</span> and preferred tutoring
           type is <span className="font-bold">{tutoringType}</span>. <br />{" "}
-          <br />.
+          <br />
           The extra information you gave us is:
           <br />
           {information}
-          <br />
+          <br /><br />
           Please reply if there is any incorrect information, other than that,
           thanks for joining! {":)"}
         </Text>
