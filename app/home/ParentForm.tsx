@@ -74,7 +74,6 @@ const ParentForm = () => {
         tutoringType
       )
     );
-    console.log(tutoringType);
   }, [tutoringType]);
 
   useEffect(() => {
