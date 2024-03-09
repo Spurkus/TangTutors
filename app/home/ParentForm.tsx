@@ -70,10 +70,11 @@ const ParentForm = () => {
 
   useEffect(() => {
     setValidTutoringType(
-      ["In-person", "Online", "Mix of in-person and online"].includes(
+      ["In-person", "Online", "Mixture"].includes(
         tutoringType
       )
     );
+    console.log(tutoringType);
   }, [tutoringType]);
 
   useEffect(() => {
