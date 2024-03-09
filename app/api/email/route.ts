@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   } = await request.json();
   await resend.emails.send({
     from: "Oscar <mail@tangtutors.com>",
-    to: email,
+    to: [email, "oscartang.dev@gmail.com"],
     subject: "Tang Tutors Student Application",
     react: Email({
       firstName,
