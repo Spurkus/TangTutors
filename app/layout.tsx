@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Tang Tutors" />
+        <meta property="og:description" content="/logo.png" />
+        <meta property="og:image" content="URL_TO_YOUR_THUMBNAIL_IMAGE" />
+        <meta property="og:url" content="www.tangtutors.com" />
+      </Head>
       <body className={inter.className}>
         <NavigationBar />
         <main>{children}</main>
